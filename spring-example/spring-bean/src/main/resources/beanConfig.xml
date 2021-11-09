@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 指定class属性，通过构造方法创建Bean实例 -->
+    <bean id="person" class="com.easy.archiecture.constructor.Person">
+        <!-- 通过调用setName方法，将aaa作为参数传入 -->
+        <property name="name" value="aaa"/>
+    </bean>
+</beans>
